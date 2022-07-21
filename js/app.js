@@ -30,8 +30,9 @@ form.addEventListener("submit", (e) => {
     formValue.titleBook.value,
     formValue.authorBook.value,
     formValue.pagesBook.value,
-    formValue.readBook.value);
+    formValue.readBook.checked);
 
     myLibrary.push(newBook);
+    form.reset();
     alert(JSON.stringify(newBook));
 });
