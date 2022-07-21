@@ -14,12 +14,16 @@ showForm.addEventListener("click", () => {
 
 // eventlistener to get user input on form
 form.addEventListener("submit", (e) => {
-  e.preventDefault()
-})
+  e.preventDefault();
+});
 
 
 // Book contructor
-function Book() {
+function Book(title, author, pages, read) {
+  this.title = title,
+  this.author = author,
+  this.pages = pages,
+  this.read = read
 }
 
 function addBookToLibrary() {
